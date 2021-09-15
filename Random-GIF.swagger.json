@@ -1,0 +1,883 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Default title",
+    "description": "Random GIF selector",
+    "version": "1.0"
+  },
+  "host": "api.giphy.com",
+  "basePath": "/v1/gifs/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/": {},
+    "/random": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "description": "type"
+                    },
+                    "id": {
+                      "type": "string",
+                      "description": "id"
+                    },
+                    "url": {
+                      "type": "string",
+                      "description": "url"
+                    },
+                    "slug": {
+                      "type": "string",
+                      "description": "slug"
+                    },
+                    "bitly_gif_url": {
+                      "type": "string",
+                      "description": "bitly_gif_url"
+                    },
+                    "bitly_url": {
+                      "type": "string",
+                      "description": "bitly_url"
+                    },
+                    "embed_url": {
+                      "type": "string",
+                      "description": "embed_url"
+                    },
+                    "username": {
+                      "type": "string",
+                      "description": "username"
+                    },
+                    "source": {
+                      "type": "string",
+                      "description": "source"
+                    },
+                    "title": {
+                      "type": "string",
+                      "description": "title"
+                    },
+                    "rating": {
+                      "type": "string",
+                      "description": "rating"
+                    },
+                    "content_url": {
+                      "type": "string",
+                      "description": "content_url"
+                    },
+                    "source_tld": {
+                      "type": "string",
+                      "description": "source_tld"
+                    },
+                    "source_post_url": {
+                      "type": "string",
+                      "description": "source_post_url"
+                    },
+                    "is_sticker": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "is_sticker"
+                    },
+                    "import_datetime": {
+                      "type": "string",
+                      "description": "import_datetime"
+                    },
+                    "trending_datetime": {
+                      "type": "string",
+                      "description": "trending_datetime"
+                    },
+                    "images": {
+                      "type": "object",
+                      "properties": {
+                        "downsized_large": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "downsized_large"
+                        },
+                        "fixed_height_small_still": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "fixed_height_small_still"
+                        },
+                        "original": {
+                          "type": "object",
+                          "properties": {
+                            "frames": {
+                              "type": "string",
+                              "description": "frames"
+                            },
+                            "hash": {
+                              "type": "string",
+                              "description": "hash"
+                            },
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "mp4": {
+                              "type": "string",
+                              "description": "mp4"
+                            },
+                            "mp4_size": {
+                              "type": "string",
+                              "description": "mp4_size"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "webp": {
+                              "type": "string",
+                              "description": "webp"
+                            },
+                            "webp_size": {
+                              "type": "string",
+                              "description": "webp_size"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "original"
+                        },
+                        "fixed_height_downsampled": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "webp": {
+                              "type": "string",
+                              "description": "webp"
+                            },
+                            "webp_size": {
+                              "type": "string",
+                              "description": "webp_size"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "fixed_height_downsampled"
+                        },
+                        "downsized_still": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "downsized_still"
+                        },
+                        "fixed_height_still": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "fixed_height_still"
+                        },
+                        "downsized_medium": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "downsized_medium"
+                        },
+                        "downsized": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "downsized"
+                        },
+                        "preview_webp": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "preview_webp"
+                        },
+                        "original_mp4": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "mp4": {
+                              "type": "string",
+                              "description": "mp4"
+                            },
+                            "mp4_size": {
+                              "type": "string",
+                              "description": "mp4_size"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "original_mp4"
+                        },
+                        "fixed_height_small": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "mp4": {
+                              "type": "string",
+                              "description": "mp4"
+                            },
+                            "mp4_size": {
+                              "type": "string",
+                              "description": "mp4_size"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "webp": {
+                              "type": "string",
+                              "description": "webp"
+                            },
+                            "webp_size": {
+                              "type": "string",
+                              "description": "webp_size"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "fixed_height_small"
+                        },
+                        "fixed_height": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "mp4": {
+                              "type": "string",
+                              "description": "mp4"
+                            },
+                            "mp4_size": {
+                              "type": "string",
+                              "description": "mp4_size"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "webp": {
+                              "type": "string",
+                              "description": "webp"
+                            },
+                            "webp_size": {
+                              "type": "string",
+                              "description": "webp_size"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "fixed_height"
+                        },
+                        "downsized_small": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "mp4": {
+                              "type": "string",
+                              "description": "mp4"
+                            },
+                            "mp4_size": {
+                              "type": "string",
+                              "description": "mp4_size"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "downsized_small"
+                        },
+                        "preview": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "mp4": {
+                              "type": "string",
+                              "description": "mp4"
+                            },
+                            "mp4_size": {
+                              "type": "string",
+                              "description": "mp4_size"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "preview"
+                        },
+                        "fixed_width_downsampled": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "webp": {
+                              "type": "string",
+                              "description": "webp"
+                            },
+                            "webp_size": {
+                              "type": "string",
+                              "description": "webp_size"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "fixed_width_downsampled"
+                        },
+                        "fixed_width_small_still": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "fixed_width_small_still"
+                        },
+                        "fixed_width_small": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "mp4": {
+                              "type": "string",
+                              "description": "mp4"
+                            },
+                            "mp4_size": {
+                              "type": "string",
+                              "description": "mp4_size"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "webp": {
+                              "type": "string",
+                              "description": "webp"
+                            },
+                            "webp_size": {
+                              "type": "string",
+                              "description": "webp_size"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "fixed_width_small"
+                        },
+                        "original_still": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "original_still"
+                        },
+                        "fixed_width_still": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "fixed_width_still"
+                        },
+                        "looping": {
+                          "type": "object",
+                          "properties": {
+                            "mp4": {
+                              "type": "string",
+                              "description": "mp4"
+                            },
+                            "mp4_size": {
+                              "type": "string",
+                              "description": "mp4_size"
+                            }
+                          },
+                          "description": "looping"
+                        },
+                        "fixed_width": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "mp4": {
+                              "type": "string",
+                              "description": "mp4"
+                            },
+                            "mp4_size": {
+                              "type": "string",
+                              "description": "mp4_size"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "webp": {
+                              "type": "string",
+                              "description": "webp"
+                            },
+                            "webp_size": {
+                              "type": "string",
+                              "description": "webp_size"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "fixed_width"
+                        },
+                        "preview_gif": {
+                          "type": "object",
+                          "properties": {
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            },
+                            "size": {
+                              "type": "string",
+                              "description": "size"
+                            },
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            }
+                          },
+                          "description": "preview_gif"
+                        },
+                        "480w_still": {
+                          "type": "object",
+                          "properties": {
+                            "url": {
+                              "type": "string",
+                              "description": "url"
+                            },
+                            "width": {
+                              "type": "string",
+                              "description": "width"
+                            },
+                            "height": {
+                              "type": "string",
+                              "description": "height"
+                            }
+                          },
+                          "description": "480w_still"
+                        }
+                      },
+                      "description": "images"
+                    },
+                    "user": {
+                      "type": "object",
+                      "properties": {
+                        "avatar_url": {
+                          "type": "string",
+                          "description": "avatar_url"
+                        },
+                        "banner_image": {
+                          "type": "string",
+                          "description": "banner_image"
+                        },
+                        "banner_url": {
+                          "type": "string",
+                          "description": "banner_url"
+                        },
+                        "profile_url": {
+                          "type": "string",
+                          "description": "profile_url"
+                        },
+                        "username": {
+                          "type": "string",
+                          "description": "username"
+                        },
+                        "display_name": {
+                          "type": "string",
+                          "description": "display_name"
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": "description"
+                        },
+                        "is_verified": {
+                          "type": "boolean",
+                          "description": "is_verified"
+                        },
+                        "website_url": {
+                          "type": "string",
+                          "description": "website_url"
+                        },
+                        "instagram_url": {
+                          "type": "string",
+                          "description": "instagram_url"
+                        }
+                      },
+                      "description": "user"
+                    },
+                    "image_original_url": {
+                      "type": "string",
+                      "description": "image_original_url"
+                    },
+                    "image_url": {
+                      "type": "string",
+                      "description": "image_url"
+                    },
+                    "image_mp4_url": {
+                      "type": "string",
+                      "description": "image_mp4_url"
+                    },
+                    "image_frames": {
+                      "type": "string",
+                      "description": "image_frames"
+                    },
+                    "image_width": {
+                      "type": "string",
+                      "description": "image_width"
+                    },
+                    "image_height": {
+                      "type": "string",
+                      "description": "image_height"
+                    },
+                    "fixed_height_downsampled_url": {
+                      "type": "string",
+                      "description": "fixed_height_downsampled_url"
+                    },
+                    "fixed_height_downsampled_width": {
+                      "type": "string",
+                      "description": "fixed_height_downsampled_width"
+                    },
+                    "fixed_height_downsampled_height": {
+                      "type": "string",
+                      "description": "fixed_height_downsampled_height"
+                    },
+                    "fixed_width_downsampled_url": {
+                      "type": "string",
+                      "description": "fixed_width_downsampled_url"
+                    },
+                    "fixed_width_downsampled_width": {
+                      "type": "string",
+                      "description": "fixed_width_downsampled_width"
+                    },
+                    "fixed_width_downsampled_height": {
+                      "type": "string",
+                      "description": "fixed_width_downsampled_height"
+                    },
+                    "fixed_height_small_url": {
+                      "type": "string",
+                      "description": "fixed_height_small_url"
+                    },
+                    "fixed_height_small_still_url": {
+                      "type": "string",
+                      "description": "fixed_height_small_still_url"
+                    },
+                    "fixed_height_small_width": {
+                      "type": "string",
+                      "description": "fixed_height_small_width"
+                    },
+                    "fixed_height_small_height": {
+                      "type": "string",
+                      "description": "fixed_height_small_height"
+                    },
+                    "fixed_width_small_url": {
+                      "type": "string",
+                      "description": "fixed_width_small_url"
+                    },
+                    "fixed_width_small_still_url": {
+                      "type": "string",
+                      "description": "fixed_width_small_still_url"
+                    },
+                    "fixed_width_small_width": {
+                      "type": "string",
+                      "description": "fixed_width_small_width"
+                    },
+                    "fixed_width_small_height": {
+                      "type": "string",
+                      "description": "fixed_width_small_height"
+                    },
+                    "caption": {
+                      "type": "string",
+                      "description": "caption"
+                    }
+                  },
+                  "description": "data"
+                },
+                "meta": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "status"
+                    },
+                    "msg": {
+                      "type": "string",
+                      "description": "msg"
+                    },
+                    "response_id": {
+                      "type": "string",
+                      "description": "response_id"
+                    }
+                  },
+                  "description": "meta"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get Random GIF",
+        "description": "Get a Random GIF",
+        "operationId": "tag",
+        "parameters": [
+          {
+            "name": "tag",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "in": "query",
+      "name": "api_key"
+    }
+  },
+  "security": [],
+  "tags": []
+}
